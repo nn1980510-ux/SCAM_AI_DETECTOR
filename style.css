@@ -1,0 +1,432 @@
+
+/* Basic Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #030603;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Top Header */
+.header {
+    width: 100%;
+    min-height: 85px;
+    padding: 15px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #050805;
+    border-bottom: 1px solid #00ff66;
+    box-shadow: 0 3px 18px rgba(0, 255, 102, 0.15);
+}
+
+/* Logo Section */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-img {
+    width: 100px;
+    height: 75px;
+    object-fit: contain;
+    display: block;
+}
+
+.logo h2 {
+    font-size: 23px;
+    color: white;
+}
+
+.logo h2 span {
+    color: #00ff66;
+    text-shadow: 0 0 10px #00ff66;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #00ff66;
+    text-shadow: 0 0 10px #00ff66;
+}
+
+/* Mobile Menu Button */
+.menu-btn {
+    display: none;
+    color: #00ff66;
+    background: transparent;
+    border: 1px solid #00ff66;
+    padding: 7px 12px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+/* Contact Information */
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 5%;
+    background: #071509;
+    color: #00ff66;
+    font-size: 13px;
+    border-bottom: 1px solid #123b20;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 850px) {
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .logo h2 {
+        font-size: 19px;
+    }
+
+  .menu-btn {
+    display: block;
+}
+
+    .navbar {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px 0 10px;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+}
+/* How It Works Section */
+.how-it-works {
+    padding: 70px 8%;
+    text-align: center;
+    background: #071009;
+}
+
+.how-it-works h2 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.how-it-works h2 span {
+    color: #00ff66;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.step-card {
+    width: 280px;
+    padding: 30px 20px;
+    background: #0b160e;
+    border: 1px solid #00ff66;
+    border-radius: 12px;
+}
+
+.step-card h3 {
+    color: #00ff66;
+    margin-bottom: 15px;
+}
+
+.step-card p {
+    color: #cccccc;
+    line-height: 1.6;
+}
+/* Hero Section */
+.hero {
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background: radial-gradient(circle, #092b16, #030603 70%);
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #00ff66;
+}
+
+.hero p {
+    max-width: 650px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #cccccc;
+    margin-bottom: 25px;
+}
+
+.check-btn {
+    background: #00ff66;
+    color: black;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* About Us Section */
+.about {
+    padding: 70px 10%;
+    text-align: center;
+    background: #050b07;
+    border-top: 1px solid #123b20;
+}
+
+.about h2 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.about h2 span {
+    color: #00ff66;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    color: #cccccc;
+    font-size: 17px;
+    line-height: 1.8;
+}/* Contact Us Section */
+.contact-us {
+    padding: 70px 10%;
+    text-align: center;
+    background: #071009;
+    border-top: 1px solid #00ff66;
+}
+
+.contact-us h2 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.contact-us h2 span {
+    color: #00ff66;
+}
+
+.contact-us p {
+    color: #cccccc;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.contact-details {
+    margin-top: 25px;
+}/* Services Section */
+.services {
+    padding: 70px 8%;
+    text-align: center;
+    background: #030603;
+}
+
+.services h2 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 35px;
+}
+
+.services h2 span {
+    color: #00ff66;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background: #0b160e;
+    border: 1px solid #00ff66;
+    border-radius: 12px;
+    padding: 30px 20px;
+    width: 280px;
+}
+
+.service-card h3 {
+    color: #00ff66;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #cccccc;
+    line-height: 1.6;
+}/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #0b160e;
+    min-width: 180px;
+    border: 1px solid #00ff66;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 12px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background: #123b20;
+    color: #00ff66;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Security Section */
+.security {
+    padding: 70px 10%;
+    text-align: center;
+    background: #030603;
+    border-top: 1px solid #00ff66;
+}
+
+.security h2 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.security h2 span {
+    color: #00ff66;
+}
+
+.security p {
+    color: #cccccc;
+    font-size: 17px;
+    line-height: 1.8;
+}
+/* Professional Mobile Navigation */
+@media (max-width: 850px) {
+    .header {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    .menu-btn {
+        display: block;
+        color: #00ff66;
+        background: #0b160e;
+        border: 1px solid #00ff66;
+        border-radius: 6px;
+        font-size: 28px;
+        padding: 8px 15px;
+        cursor: pointer;
+    }
+
+    .navbar {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px;
+        margin-top: 12px;
+        background: #050805;
+        border: 1px solid #123b20;
+        border-radius: 8px;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .navbar a:hover {
+        color: #00ff66;
+        text-shadow: 0 0 10px #00ff66;
+    }
+
+    .dropdown-content {
+        position: static;
+        margin-top: 8px;
+        min-width: 200px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .service-container,
+    .steps-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card,
+    .step-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+}
